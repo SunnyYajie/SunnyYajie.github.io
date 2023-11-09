@@ -1,0 +1,688 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #333356;
+    color: white;
+}
+
+/* ========================== Home/Header Section ========================== */
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/Spacebgorig.gif);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.container{
+    padding: 10px 10%;
+}
+/* ========================== Navigation Bar ========================== */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+.navbar{
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 80%;
+    background-color: #363656ce ;
+    border-radius: 15px;
+    padding: .3rem 3rem;
+    z-index: 2;
+}
+
+.logo{
+    width: 70px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: #D0E5E8;
+    text-decoration: none;
+    font-size: 16px;
+    position: relative;
+    font-weight: 500;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #42CFCA;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+/* ========================== Contains All Of The Home/Header Text ========================== */
+.header-bg{
+    margin-top: 10rem;
+    background-color: #363656ce ;
+    padding: 5%;
+    border-radius: 35px;
+}
+
+.header-text{
+    font-size: 25px;
+}
+
+.header-text h1{
+    font-size: 45px;
+    margin-top: 20px;
+}
+
+.name{
+    color: #46e6e0;
+}
+
+.profession{
+    color: #ff9900;
+}
+
+.header-text p{
+    font-size: 100%;
+    margin-top: 4%;
+    text-align: justify;
+    text-indent: 5rem;
+}
+
+/* ========================== About Section ========================== */
+.container2{
+    padding: 10px 10%;
+    margin-top: 2rem;
+}
+
+#about{
+    padding-top: 4rem;
+    padding-bottom: 6rem;
+    color: #D0E5E8;
+    z-index: 1;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col1{
+    margin-right: 5px;
+    flex-basis: 60%;
+    text-align: right;
+}
+
+.about-me{
+    font-size: 60px;
+    font-weight: 600;
+    color: #42cfca;
+}
+
+.about-col2{
+    flex-basis: 35%;
+    margin-top: 2rem;
+}
+
+.about-col2 img{
+    width: 100%;
+    border-radius: 26% 74% 23% 77% / 79% 22% 78% 21% ;
+}
+
+.monologue{
+    margin-top: 2rem;
+    text-align: justify;
+    text-indent: 5rem;
+}
+
+/* ========================== Tabbed Details and Information In About Section ========================== */
+.tab-titles{
+    display: flex;
+    margin: 10px 0 40px;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.tab-links{
+    margin-left: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #42CFCA;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+.tab-links:hover::after{
+    width: 100%;
+}
+
+.tab-links.active-link::after{
+    width: 50%;
+}
+
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+
+/* ========================== Skill Tab In About Section ========================== */
+.skill-container{
+    text-align: left;
+    margin-bottom: 2.2rem;
+}
+
+.skill-item .skill-header{
+    position: relative;
+    
+}
+
+.skill-item .skill-header .skill-title{
+    font-size: 14px;
+    font-weight: 500;
+    margin: 15px 0;
+}
+
+.skill-item .skill-header .skill-percent{
+    position: absolute;
+    top: -3px;
+    right: 0;
+}
+
+.skill-item .skill-header .skill-percent p{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.skill-item .skill-bar{
+    margin-bottom: 1.6rem;
+}
+
+.skill-item .skill-bar .bar-inner{
+    height: 11px;
+    border-radius: 5px;
+    background-color: #42cfca;
+    
+}
+
+.skill-item .skill-bar .bar-inner#ui{
+    width: 70%;
+}
+.skill-item .skill-bar .bar-inner#html{
+    width: 85%;
+}
+.skill-item .skill-bar .bar-inner#python{
+    width: 80%;
+}
+.skill-item .skill-bar .bar-inner#csharp{
+    width: 75%;
+}
+.skill-item .skill-bar .bar-inner#java{
+    width: 80%;
+}
+
+/* ========================== Education Tab In About Section ========================== */
+.education-container{
+    text-align: right;
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 2rem 0;
+}
+
+.tab-contents ul li span{
+    color: #42cfca;
+    font-size: 17px;
+}
+
+/* ========================== Portfolio Section ========================== */
+.container3{
+    padding: 10px 10%;
+    margin-top: 1rem;
+}
+
+#portfolio{
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+}
+
+.tab-titles2{
+    margin: 0rem 3rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tab-titles2 h1{
+    transition: transform 1s;
+}
+
+.tab-titles2 h1:hover{
+    transform: scale(1.1);
+}
+
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #42cfca;
+}
+
+.tab-links2{
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links2::after{
+    content: '';
+    width: 0;
+    height: 5px;
+    background: rgba(43, 139, 145, 1);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+.tab-links2:hover::after{
+    width: 100%;
+}
+
+.tab-links2.active-link2::after{
+    width: 50%;
+}
+
+.tab-contents2{
+    display: none;
+}
+.tab-contents2.active-tab2{
+    display: block;
+}
+
+.btn{
+    display: block;
+    margin: 9rem auto;
+    margin-bottom: 5rem;
+    width: fit-content;
+    border: 1px solid rgb(255, 153, 0);
+    padding: 14px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    font-weight: 800;
+    transition: background 0.7s, transform 1s;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+    background: rgb(255, 153, 0);
+}
+
+/* ========================== Project Tab In Portfolio ========================== */
+.portfolio-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 5rem;
+}
+
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 1s;
+}
+
+.work:hover img{
+    transform: scale(1.1);
+}
+
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(43, 139, 145,.8) ,rgb(255, 153, 0, .7));
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    transition: height 1s;
+}
+
+.work:hover .layer{
+    height: 105%;
+}
+
+.layer h3{
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+
+.layer p{
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.layer a{
+    margin-top: 1rem;
+    color: rgb(255, 153, 0);
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+/* ========================== Achievements Tab In Portfolio ========================== */
+.carousel-body{
+    width: 105%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.slider{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    user-select: none;
+    width: fit-content;
+    height: 40rem;
+    right: 0;
+}
+
+.slide{
+    width: 750px;
+    height: inherit;
+    margin: 5rem 5vw;
+    position: relative;
+    transition: all .7s ease;
+}
+
+.slide > .photo{
+    width: 50rem;
+    height: 20rem;
+    transition: all 1s ease;
+}
+
+.slide > .photo > img{
+    width: 50%;
+    height: 30rem;
+    object-fit: cover;
+    transition: width 1s;
+}
+.slide > .photo:hover > img{
+    width: 100%;
+    transition: all 1s ease 1s;
+}
+
+.slide > .text{
+    position: absolute;
+    bottom: 40%;
+    right: 1rem;
+    color: white;
+    transition: all .4s ease;
+    background-color: #333356b9;
+    border-radius: 2rem;
+    width: 50%;
+    padding: 0 .4rem;
+}
+
+.slide > .text h2{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.slide .photo::before{
+    content: '';
+    position: absolute;
+    color: #fff;
+    transform: rotate(-90deg);
+    top: 43px;
+    left: -70px;
+}
+
+.slide:nth-child(1) .photo::before{
+    content: '01 _____ 04';
+}
+.slide:nth-child(2) .photo::before{
+    content: '02 _____ 04';
+}
+.slide:nth-child(3) .photo::before{
+    content: '03 _____ 04';
+}
+.slide:nth-child(4) .photo::before{
+    content: '04 _____ 04';
+}
+
+.slider:active{
+    cursor: grabbing;
+}
+.slider:active .slide{
+    transform: scale(0.9);
+    margin: 0 0;
+}
+.slider:active .slide .text{
+    transform: translateX(-40%);
+    
+}
+
+/* ========================== Footer/Contacts Section ========================== */
+.contact-left h1{
+    color: #ff9900;
+}
+
+.contact-left{
+    flex-basis: 35%;
+}
+
+.contact-left p{
+    margin-top: 1rem;
+}
+.contact-left i{
+    margin-right: 1rem;
+    color:#ff9900;
+}
+
+.contact-right{
+    flex-basis: 60%;
+}
+
+.social-icons{
+    margin-top: 3rem;
+}
+
+.social-icons i{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 1rem;
+    display: inline-block;
+    transition: transform 1s;
+    color: white;
+}
+
+.social-icons i{
+    animation: glow 2s ease infinite;
+}
+
+.social-icons i:hover{
+    color: #ff9900;
+    transform: translateY(-6px);
+}
+
+.btn.btn2{
+    display: block;
+    background: none;
+    margin-top: 1rem;
+    cursor: pointer;
+    padding: 1rem 3rem;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+    background: rgb(255, 153, 0);
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 1px solid rgb(255, 153, 0);
+    outline: none;
+    background: #54547b;
+    padding: 15px;
+    margin: 1rem 0;
+    color: white;
+    font-size: 18px;
+    border-radius: .6rem;
+}
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #54547b;
+    font-weight: 300;
+    margin-top: 2rem;
+}
+
+#msg{
+    display: block;
+    color: #ff9900;
+    margin-top: -60px;
+    text-align: center;
+}
+
+/* ========================== Responsiveness For Small Screen ========================== */
+nav .fa-solid{
+    display: none;
+}
+
+@media only screen and (max-width: 1100px){
+    .header-bg{
+        margin-top: 50%;
+    }
+    .header-text{
+        font-size: 16px;
+    }
+    
+    .header-text h1{
+        font-size: 30px;
+    }
+    nav .fa-solid{
+        display: block;
+        font-size: 35px;
+        cursor: pointer;
+    }
+    nav ul{
+        background: #54547be3;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 70px;
+        z-index: 2;
+        transition: right 1s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .sub-title{
+        font-size: 40px;
+    }
+    .about-me{
+        margin-top: -4rem;
+    }
+    .about-col1, .about-col2{
+        flex-basis: 100%;
+    }
+    .about-col2{
+        font-size: 14px;
+    }
+    .container3{
+        flex-basis: 100%;
+    }
+    .tab-titles2 h1{
+        font-size: 23px;
+        justify-content: space-between;
+    }
+    .slide > .text{
+        bottom: 40%;
+        left: 1%;
+    }
+    .slide > .text h2{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .slide {
+        margin-right: -20rem;
+    }
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+    .contact-right{
+        margin-top: 2rem;
+    }
+    .copyright{
+        font-size: 14px;
+    }
+    
+}

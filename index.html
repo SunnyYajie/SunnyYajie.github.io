@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=9.0">
+    <title>EMG Portfolio</title>
+    <script src="https://kit.fontawesome.com/544861947b.js" crossorigin="anonymous"></script>
+    <!-- ========================== CSS Link ========================== -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- ========================== Home/Header Section ========================== -->
+    <header>
+        <section id="header">
+            <div class="container">
+                <div class="navbar">
+                    <nav>
+                        <!-- ========================== Logo in Nav Bar ========================== -->
+                        <img src="images/logo2.png" href="#header" class="logo">
+                        <!-- ========================== Nav Bar Items ========================== -->
+                        <ul id="sidemenu">
+                            <li><a href="#header">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                        </ul>
+                        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                    </nav>
+                </div>
+                <!-- ========================== Opening/Header Text ========================== -->
+                <div class="header-bg">
+                    <div class="header-text">
+                        <h1>Ad Astra! I am</h1>
+                        <h1 class="name">Eijay M. Gabrentina</h1>
+                        <h1>a <span class="profession"></span></h1>
+                        <h1>based in the Philippines</h1>
+                        <p>I'm currently taking Bachelor of Science in Information Technology in St. Dominic College of Asia. Welcome to my world!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!-- ========================== Main Content ========================== -->
+    <main>
+        <!-- ========================== About Section ========================== -->
+        <section id="about">
+            <div class="container2">
+                <div class="row">
+                    <div class="about-col1">
+                        <h1 class="about-me">About Me</h1>
+                        <p class="monologue">Hello, I am Eijay M. Gabrentina, a passionate and dedicated college student on the path to a Bachelor of Science in Information Technology. I am 21 years old. Even from a young age, I have already strived for excellence, consistently moving up as an honor student. I am committed to further honing my skills and knowledge in the field of software and web development. I am excited about the endless possibilities that this dynamic and ever-evolving field offers.</p>
+                        
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p> 
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <!-- ========================== Skills Tab ========================== -->
+                        <div class="tab-contents active-tab" id="skills">
+                            <div class="skill-container">
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <h6 class="skill-title">UI/UX Design</h6>
+                                        <div class="skill-percent">
+                                            <p><span class="counter">70</span>%</p>
+                                        </div>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="bar-inner" id="ui">
+                                            <div class="bar progress-line" data-progress="70%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <h6 class="skill-title">HTML/CSS</h6>
+                                        <div class="skill-percent">
+                                            <p><span class="counter">85</span>%</p>
+                                        </div>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="bar-inner" id="html">
+                                            <div class="bar progress-line" data-progress="85%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <h6 class="skill-title">Python</h6>
+                                        <div class="skill-percent">
+                                            <p><span class="counter">80</span>%</p>
+                                        </div>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="bar-inner" id="python">
+                                            <div class="bar progress-line" data-progress="80%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <h6 class="skill-title">C#</h6>
+                                        <div class="skill-percent">
+                                            <p><span class="counter">75</span>%</p>
+                                        </div>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="bar-inner" id="csharp">
+                                            <div class="bar progress-line" data-progress="75%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <h6 class="skill-title">Java</h6>
+                                        <div class="skill-percent">
+                                            <p><span class="counter">80</span>%</p>
+                                        </div>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="bar-inner" id="java">
+                                            <div class="bar progress-line" data-progress="80%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ========================== Education Tab ========================== -->
+                        <div class="tab-contents" id="education">
+                            <div class="education-container">
+                                <ul>
+                                    <li><span>College</span><br>St. Dominic College of Asia<br>2020 - Present</li>
+                                    <li><span>Senior High School</span><br>AMA Computer Learning Center<br>2019-2020 | Graduated Valedictorian</li>
+                                    <li><span>Junior High School</span><br>Manila High School<br>2015-2019 | Graduated With High Honors</li>
+                                    <li><span>Elementary</span><br>Teodora Alonzo Elementary School<br>2009 - 2015 | Graduated With Honors</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="about-col2">
+                        <img src="images/portrait2.png">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ========================== Portfolio Section ========================== -->
+        <section id="portfolio">
+            <div class="container3">
+                <div class="tab-titles2">
+                    <h1 class="sub-title tab-links2 active-link2" onclick="opentab2('my-work')">Projects</h1>
+                    <h1 class="sub-title tab-links2" onclick="opentab2('achievement')">Achievements</h1>
+                </div>
+                <!-- ========================== Projects Tab ========================== -->
+                <div class="tab-contents2 active-tab2" id="my-work">
+                    <div class="portfolio-list">
+                        <div class="work">
+                            <img src="images/work-1.png">
+                            <div class="layer">
+                                <h3>BackSafe</h3>
+                                <p>A mobile application concept and proposal that alerts its users (mainly commuters) through vibrations whenever they are near their destination.</p>
+                                <a href="https://docs.google.com/document/d/1ZjRk4lx2eCBdekhk15avojzgWKuVUVZD/edit?usp=sharing&ouid=115282406990092740052&rtpof=true&sd=true" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="work">
+                            <img src="images/work-2.png">
+                            <div class="layer">
+                                <h3>Snek Game</h3>
+                                <p>A mobile game developed with python using the kivy framework. It has an online as well as an offline apk version. </p>
+                                <a href="https://github.com/SunnyYajie/Snek" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="work">
+                            <img src="images/work-3.png">
+                            <div class="layer">
+                                <h3>IDRIS</h3>
+                                <p>A prototype for the Implementation and Development of a Reservation and Inventory System for St. Dominic College of Asia’s Business Center</p>
+                                <a href="https://docs.google.com/document/d/1vI-AQHa-14luKATo-n4YlnQWbX1pROEy2STIwX3Ye6I/edit?usp=drive_link" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ========================== Achievements Tab ========================== -->
+                <div class="carousel-body">
+                    <div class="tab-contents2" id="achievement">
+                        <div class="slider" id="slider" data-mouse-down-at="0" data-prev-percentage="0">
+                            <div class="slide">
+                                <div class="photo">
+                                    <img id="img1" src="images/Hackaton.jpg" alt="" draggable="false">
+                                </div>
+                                <div class="text">
+                                    <h2>HackForGov <br> Hackaton <br> 6th Placer</h2>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="photo">
+                                    <img id="img2" src="images/JPCS ORG VP Internal.jpg" alt="" draggable="false">
+                                </div>
+                                <div class="text">
+                                    <h2>JPCS <br> Vice President <br> Internal</h2>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="photo">
+                                    <img id="img3" src="images/Valedictorian.jpg" alt="" draggable="false">
+                                </div>
+                                <div class="text">
+                                    <h2>Senior High School Valedictorian Graduate</h2>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="photo">
+                                    <img id="img4" src="images/Deans List.jpg" alt="" draggable="false">
+                                </div>
+                                <div class="text">
+                                    <h2>Consistent <br> College <br> Dean's Lister</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ========================== CV Button ========================== -->
+                <a href="images/Eijay M. Gabrentina CV.pdf" target="_blank" class="btn">Curriculum Vitae</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Hit Me Up!</h1>
+                        <address>
+                        </address>
+                            <p><i class="fa-solid fa-envelope"></i> eijay.gabrentina@sdca.edu.ph</p>
+                            <p><i class="fa-solid fa-square-phone"></i> 09384537329</p>
+                            <div class="social-icons">
+                                <a href="https://www.facebook.com/profile.php?id=100013357454112"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="https://github.com/SunnyYajie"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://discord.com/users/742665344467861515"><i class="fa-brands fa-discord"></i></a>
+                                <a href="https://www.linkedin.com/in/eijay-gabrentina-917018225/"><i class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                        </address>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="email" required>
+                            <textarea name="Message" rows="6" placeholder="Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © EMG || St. Dominic College of Asia</p>
+            </div>
+        </section>
+    </footer>
+
+    <!-- ========================== JavaScript and Google Links ========================== -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz0vAjO9FxSw1qO8SqalXjs368TxKzgyLkJ6EkKegV2BIlRiyjNYIN2di3B_XpnLxPzgA/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg");
+    
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {msg.innerHTML = "Message Submitted Successfully" 
+            setTimeout(function(){msg.innerHTML = ""}, 5000) 
+            form.reset()})
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.16/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>
