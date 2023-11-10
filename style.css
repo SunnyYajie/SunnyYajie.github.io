@@ -614,7 +614,7 @@ nav .fa-solid{
 
 @media only screen and (max-width: 1100px){
     .header-bg{
-        margin-top: 50%;
+        margin-top: 40%;
     }
     .header-text{
         font-size: 16px;
