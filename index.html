@@ -243,15 +243,6 @@
                             </div>
                         </address>
                     </div>
-                    <div class="contact-right">
-                        <form name="submit-to-google-sheet">
-                            <input type="text" name="Name" placeholder="Your Name" required>
-                            <input type="email" name="Email" placeholder="email" required>
-                            <textarea name="Message" rows="6" placeholder="Message"></textarea>
-                            <button type="submit" class="btn btn2">Submit</button>
-                        </form>
-                        <span id="msg"></span>
-                    </div>
                 </div>
             </div>
             <div class="copyright">
@@ -261,20 +252,6 @@
     </footer>
 
     <!-- ========================== JavaScript and Google Links ========================== -->
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbz0vAjO9FxSw1qO8SqalXjs368TxKzgyLkJ6EkKegV2BIlRiyjNYIN2di3B_XpnLxPzgA/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg = document.getElementById("msg");
-    
-        form.addEventListener('submit', e => {
-            e.preventDefault()
-            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {msg.innerHTML = "Message Submitted Successfully" 
-            setTimeout(function(){msg.innerHTML = ""}, 5000) 
-            form.reset()})
-            .catch(error => console.error('Error!', error.message))
-        })
-    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.16/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script.js"></script>
 </body>
