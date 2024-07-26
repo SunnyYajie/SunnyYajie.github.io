@@ -246,16 +246,16 @@ nav ul li a:hover::after{
     width: 70%;
 }
 .skill-item .skill-bar .bar-inner#html{
-    width: 85%;
+    width: 80%;
 }
 .skill-item .skill-bar .bar-inner#python{
-    width: 80%;
+    width: 70%;
 }
 .skill-item .skill-bar .bar-inner#csharp{
-    width: 75%;
+    width: 60%;
 }
 .skill-item .skill-bar .bar-inner#java{
-    width: 80%;
+    width: 60%;
 }
 
 /* ========================== Education Tab In About Section ========================== */
@@ -524,24 +524,24 @@ nav ul li a:hover::after{
 }
 
 /* ========================== Footer/Contacts Section ========================== */
-.contact-left h1{
-    color: #42cfca;
+.contact-left{
+    display: block;
+    text-align: center;
 }
 
-.contact-left{
-    flex-basis: 35%;
+.contact-left h1{
+    display: flex;
+    color: #42cfca;
+    justify-content: center;
 }
 
 .contact-left p{
     margin-top: 1rem;
+    justify-content: center;
 }
 .contact-left i{
     margin-right: 1rem;
     color:#42cfca;
-}
-
-.contact-right{
-    flex-basis: 60%;
 }
 
 .social-icons{
@@ -671,6 +671,9 @@ nav .fa-solid{
     }
     .container3{
         flex-basis: 100%;
+    }
+    .tab-links2{
+        right: 10%;
     }
     .tab-links2::after{
         height: 2.5rem;
