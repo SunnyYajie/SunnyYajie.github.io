@@ -613,8 +613,17 @@ nav .fa-solid{
 }
 
 @media only screen and (max-width: 1100px){
+    *{
+        overflow-x: hidden;
+    }
+    body{
+        width: 100%;
+        overflow-x: hidden;
+        transform-origin: top right;
+        transform: scale(1);
+    }
     .header-bg{
-        margin-top: 40%;
+        margin-top: 70%;
     }
     .header-text{
         font-size: 16px;
@@ -653,7 +662,7 @@ nav .fa-solid{
         font-size: 40px;
     }
     .about-me{
-        margin-top: -4rem;
+    
         text-align: center;
     }
     .about-col1, .about-col2{
@@ -672,15 +681,18 @@ nav .fa-solid{
     .container3{
         flex-basis: 100%;
     }
-    .tab-links2{
-        right: 10%;
-    }
+
     .tab-links2::after{
         height: 2.5rem;
     }
-    .tab-titles2 h1{
-        font-size: 23px;
+    .tab-titles2{
+        width: 110%;
+        margin-left: -1rem;
+        display: flex;
         justify-content: space-between;
+    }
+    .tab-titles2 h1{
+        font-size: 25px;
     }
     .slide > .text{
         bottom: 40%;
